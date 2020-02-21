@@ -1,15 +1,70 @@
 import React from 'react';
 import './CommentItem.css';
-import { render } from '@testing-library/react';
 
-const comment = {
+
+// const comment = {
+//     date: new Date(),
+//     text: 'I hope you enjoy learning React!',
+//     author: {
+//       name: 'Hello Kitty',
+//       avatarUrl: 'https://placekitten.com/g/64/64',
+//     },
+//   };
+
+const comment = [
+  {
     date: new Date(),
     text: 'I hope you enjoy learning React!',
     author: {
       name: 'Hello Kitty',
       avatarUrl: 'https://placekitten.com/g/64/64',
     },
-  };
+  },
+
+  {
+    date: new Date(),
+    text: 'I hope you enjoy learning React!',
+    author: {
+      name: 'Hello Kitty',
+      avatarUrl: 'https://placekitten.com/g/64/64',
+    },
+  },
+
+  {
+    date: new Date(),
+    text: 'I hope you enjoy learning React!',
+    author: {
+      name: 'Hello Kitty',
+      avatarUrl: 'https://placekitten.com/g/64/64',
+    },
+  },
+
+  {
+    date: new Date(),
+    text: 'I hope you enjoy learning React!',
+    author: {
+      name: 'Hello Kitty',
+      avatarUrl: 'https://placekitten.com/g/64/64',
+    },
+  },
+  {
+    date: new Date(),
+    text: 'I hope you enjoy learning React!',
+    author: {
+      name: 'Hello Kitty',
+      avatarUrl: 'https://placekitten.com/g/64/64',
+    },
+  },
+
+  {
+    date: new Date(),
+    text: 'I hope you enjoy learning React!',
+    author: {
+      name: 'Hello Kitty',
+      avatarUrl: 'https://placekitten.com/g/64/64',
+    },
+  },
+]
   
   function Avatar(props) {
     return (
@@ -56,7 +111,7 @@ const comment = {
     render() {
       return (
         <div className="Comment">
-          <div><UserInfo user={this.props.author} /></div>
+          <UserInfo user={this.props.author} />
           <div className="Comment-text">{this.props.text}</div>
           <div className="Comment-date">
             {(this.state.date).toLocaleTimeString()}
@@ -67,17 +122,40 @@ const comment = {
     
   }
 
-  function CommentItem() {
-      return (
-          <div className='comment-item'>
-            <Comment 
-            // date={comment.date}
-            text={comment.text}
-            author={comment.author}
-            />
-          </div>
+  // function CommentItem() {
+  //     return (
+  //         <div className='comment-item'>
+  //           <Comment 
+  //           // date={comment.date}
+  //           text={comment.text}
+  //           author={comment.author}
+  //           />
+  //         </div>
           
-      )
+  //     )
+  // }
+
+  function Content(props) {
+    const item = props.comment.map((comment, index) =>
+      <Comment 
+        key={index}
+        date={comment.date}
+        text={comment.text}
+        author={comment.author}
+      />
+    )
+    return (
+      <div className='Content'> {item} </div>
+    ) 
   }
+
+  function CommentItem() {
+    return (
+      <div className='CommentItem'>
+        <Content comment={comment}/>
+      </div>
+    )
+  }
+
 
 export default CommentItem;

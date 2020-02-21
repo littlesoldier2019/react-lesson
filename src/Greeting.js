@@ -11,12 +11,73 @@ function GuestGreeting(props) {
 
 function Greeting(props) {
     const isLoggedIn = props.isLoggedIn;
-    if (isLoggedIn) {
-        return <UserGreeting />;
-    } else {
-        return <GuestGreeting />;
-    } 
+    // if (isLoggedIn) {
+    //     return <UserGreeting />;
+    // } else {
+    //     return <GuestGreeting />;
+    // } 
+    return (
+        <>
+            {isLoggedIn === true && <UserGreeting />}
+            {isLoggedIn === false && <GuestGreeting />} 
+        </>
+    )
+    
 }
+
+function WelcomeBanner(props) {
+    if (!props.warn) {
+        return null;
+    }
+
+    return (
+        <div className='warning'>
+            Nice to see you again!
+        </div>
+    )    
+
+}
+
+function Page(props) {
+    // const isLoggedIn = props.isLoggedIn;
+    
+    // return (
+    //     <>
+    //         {isLoggedIn === true && <WelcomeBanner warn={props.isLoggedIn} />}
+    //         {isLoggedIn === false && <WelcomeBanner warn={props.isLoggedIn} />} 
+    //     </>
+    // )
+
+    return (
+        <WelcomeBanner warn={props.isLoggedIn} />
+    )
+    
+}
+
+// class Page extends React.Component {
+//     constructor(props) {
+//         super(props);
+//         this.state = {showWarning: true};
+//         this.handleToggleClick = this.handleToggleClick.bind(this);
+//     }
+
+//     handleToggleClick() {
+//         this.setState(state => ({showWarning: !this.state.showWarning}))
+//     }
+
+//     render() {
+//         return (
+//             <div>
+//                 <WelcomeBanner warn={this.state.showWarning} /> 
+//                 <button onClick={this.handleToggleClick}>
+//                     {this.state.showWarning ? 'Hide' : 'Show'}
+//                 </button>
+//             </div>
+//         )
+//     }
+// }
+
+
 
 //create components
 
@@ -58,17 +119,32 @@ class LoginControl extends React.Component {
         let button;
     
     //check which components is click, then run the function handle
-        if (isLoggedIn) {
-            button = <LogoutButton onClick={this.handleLogoutClick} />;
-        } else {
-            button = <LoginButton onClick={this.handleLoginClick} />;
-        }
+        // if (isLoggedIn) {
+        //     button = <LogoutButton onClick={this.handleLogoutClick} />;
+        // } else {
+        //     button = <LoginButton onClick={this.handleLoginClick} />;
+        // }
+
+        isLoggedIn   
+            ? button = <LogoutButton onClick={this.handleLogoutClick} />
+            : button = <LoginButton onClick={this.handleLoginClick} />;
+        
+
+                 
+        // {isLoggedIn 
+        // ? (button = <LogoutButton onClick={this.handleLogoutClick} />)
+        // : (button = <LoginButton onClick={this.handleLoginClick} />})
+        // } 
+        
+        
+
 
     //display message and button according to the isLoggedIn status
         return (
             <div>
                 <Greeting isLoggedIn={isLoggedIn} />
                 {button}
+                <Page isLoggedIn={isLoggedIn}></Page>
             </div>
         )
     }
