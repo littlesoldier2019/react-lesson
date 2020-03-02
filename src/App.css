@@ -2,6 +2,19 @@
   text-align: center;
 }
 
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+h2 {
+  text-align: center;
+  border-top: solid 2px blue;
+  border-bottom: solid 2px blue;;
+  background-color: lightgrey;
+  padding: 1rem 0;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;

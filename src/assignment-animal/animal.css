@@ -1,0 +1,29 @@
+.Animal {
+    text-align: center;
+  }
+  
+  
+  h1, h3 {
+    color: #0C0A53;
+  }
+  
+  .button_contain {
+    display: flex;
+    align-items: baseline;
+    width: 10rem;
+    margin: 1rem auto;
+  }
+  
+  button{
+    margin: 0 5px;
+    text-decoration: none;
+    border: none;
+    background-color: white;
+    font-size: 22px;
+    text-decoration: underline;
+    color: #0C0A53;
+  }
+  
+  img {
+    margin: auto 0;
+  }

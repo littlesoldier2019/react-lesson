@@ -27,7 +27,7 @@ import './Header.css';
 
   class SubTitle extends React.Component {
     render() {
-      return <h2 className='sub-title'>My first webpage with React</h2>;
+      return <h3 className='sub-title'>My first webpage with React</h3>;
     }
   }
 

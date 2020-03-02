@@ -1,0 +1,18 @@
+.Pokemon-dex {
+	text-align: center;
+	background-color: #D3D3D3;
+	padding: 1rem 0;
+}
+.Pokedex-card {
+	display: flex;
+	justify-content: space-evenly;
+
+}
+
+.Pokemondex-winner {
+	color: #4caf50;
+}
+
+.Pokemondex-loser {
+	color: #e91e63;
+}
