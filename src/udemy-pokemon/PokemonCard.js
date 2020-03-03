@@ -3,7 +3,6 @@ import './PokemonCard.css';
 const ImgAPI = 'https://assets.pokemon.com/assets/cms2/img/pokedex/detail/';
 
 let imgCode = (number) => (number <= 999 ? `00${number}`.slice(-3) : number);
-console.log(imgCode);
 
 class PokemonCard extends Component {
     
