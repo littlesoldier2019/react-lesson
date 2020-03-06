@@ -1,3 +1,8 @@
+## INTRODUCTION:
+A collection of small games and apps. I made these to learn and practice React. 
+
+----------------------------------------------------------------------
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
