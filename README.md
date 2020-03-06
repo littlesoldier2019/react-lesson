@@ -1,6 +1,13 @@
 ## INTRODUCTION:
 A collection of small games and apps. I made these to learn and practice React. 
 
+- Hangman: Generate random word for user to guess. Then display result accordingly
+- Dice: Show random number when roll
+- Pokemon: Two groups of random cards, compare the point and who which hand wins
+- Rating: Display message and number of stars user choose
+- Animal: Show animal picture when click the button
+- Timer: greeting and change background according to time
+
 ----------------------------------------------------------------------
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
