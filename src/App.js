@@ -18,7 +18,7 @@ import Hangman from './udemy-hangman/Hangman';
 function App() {
     return (
         <div> 
-            <h1>React lessons</h1>
+            {/* <h1>React lessons</h1> */}
             {/* <div className='excersise'>
                 <h2>Udemy Pie Chart</h2>
                 <PieChart />
@@ -33,7 +33,7 @@ function App() {
                     <Hangman />
                 </div>
             </div>
-            <div className='excersise'>
+            {/* <div className='excersise'>
                 <h2>Roll Dice</h2>
                 <Dice />
             </div>
@@ -52,7 +52,7 @@ function App() {
             <div className='excersise'>
                 <h2>Show Timer</h2>
                 <Timer></Timer>
-            </div>
+            </div> */}
             {/* <div className='excersise'>
                 <h2>React.org main concepts</h2>
                 <Header></Header> 
