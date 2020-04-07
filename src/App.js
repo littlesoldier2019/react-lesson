@@ -11,6 +11,7 @@ import Review from './udemy-rating/Review';
 import PokemonGame from './udemy-pokemon/PokemonGame';
 import Dice from './udemy-dice/Dice'
 import Hangman from './udemy-hangman/Hangman';
+import Board from './udemy-lightgame';
 // import PieChart from './udemy-piechart/PieChart';
 // import Footer from './Footer.js';
 
@@ -28,11 +29,17 @@ function App() {
                 <WeatherAPI />
             </div> */}
             <div className='excersise'>
+                <h2></h2>
+                <div className='App-hangman'>
+                    <Board />
+                </div>
+            </div>
+            {/* <div className='excersise'>
                 <h2>Hangman Game</h2>
                 <div className='App-hangman'>
                     <Hangman />
                 </div>
-            </div>
+            </div> */}
             {/* <div className='excersise'>
                 <h2>Roll Dice</h2>
                 <Dice />
