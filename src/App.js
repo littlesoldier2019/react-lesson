@@ -19,27 +19,27 @@ import Board from './udemy-lightgame/Board';
 function App() {
     return (
         <div> 
-            {/* <h1>React lessons</h1> */}
-            {/* <div className='excersise'>
+            <h1>React lessons</h1>
+            <div className='excersise'>
                 <h2>Udemy Pie Chart</h2>
                 <PieChart />
-            </div> */}
-            {/* <div className='excersise'>
+            </div>}
+            <div className='excersise'>
                 <h2>Assignment Country Weather API </h2>
                 <WeatherAPI />
-            </div> */}
+            </div> 
             <div className='excersise'>
                 <div className='App-lightgame'>
                     <Board />
                 </div>
             </div>
-            {/* <div className='excersise'>
+            <div className='excersise'>
                 <h2>Hangman Game</h2>
                 <div className='App-hangman'>
                     <Hangman />
                 </div>
-            </div> */}
-            {/* <div className='excersise'>
+            </div>
+            <div className='excersise'>
                 <h2>Roll Dice</h2>
                 <Dice />
             </div>
@@ -59,11 +59,11 @@ function App() {
                 <h2>Show Timer</h2>
                 <Timer></Timer>
             </div> */}
-            {/* <div className='excersise'>
+            <div className='excersise'>
                 <h2>React.org main concepts</h2>
                 <Header></Header> 
                 <Main></Main>
-            </div> */}
+            </div>
         </div>
     )
 } 
